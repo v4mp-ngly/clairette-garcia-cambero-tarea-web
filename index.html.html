@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Página de Carros</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS Personalizado -->
+    <style>
+        body {
+            background-color: #f2eded;
+        }
+        .header {
+            background-color: #810cac;
+            color: rgb(22, 21, 21);
+            padding: 20px 0;
+            text-align: center;
+        }
+        .car-card {
+            margin: 20px 0;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Bienvenidos A Carros Flex</h1>
+        <p>Descubre los mejores modelos de carros</p>
+    </header>
+
+    <div class="container">
+        <h2>Modelos Destacados</h2>
+        <div class="row">
+            <div class="col-md-4 car-card">
+                <div class="card">
+                    <img src="Carro1.jpg" alt="Carro 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Mercedes-Benz Vision AVTR</h5>
+                        <p class="card-text">Mercedes-Benz ha concebido el Vision AVTR como una entidad orgánica, como si fuera un ser vivo que se convierte en la extensión del conductor.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 car-card">
+                <div class="card">
+                    <img src="Carro2.jpg" alt="Carro 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Chevrolet Camaro</h5>
+                        <p class="card-text">Chevrolet Camaro después de 50 años de ampliar los límites, adquiere tecnología avanzada de alto desempeño, diseño detallado y un perfeccionamiento de ingeniería.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 car-card">
+                <div class="card">
+                    <img src="Carro3.jpg" alt="Carro 3">
+                    <div class="card-body">
+                        <h5 class="card-title">BMW M5</h5>
+                        <p class="card-text">La gama M de Serie 5 combina de forma extraordinaria la deportividad característica de M con la comodidad y la elegancia de una sedán ejecutiva.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Video Destacado</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YuzClM_OAO0?si=d7iVSC-g_OcL2MTZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
